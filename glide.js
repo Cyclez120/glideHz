@@ -20,7 +20,7 @@ if (Data.getBoolean("glide-loaded", false)) {
 
 function onFastTick() {
 
-    if module != null && mode != null && velocity != null && module.isActive()) { // проверки на null нужны потому что onFastTick начинает работу раньше чем module, mode и velocity инициализируются
+    if (module != null && mode != null && velocity != null && module.isActive()) { // проверки на null нужны потому что onFastTick начинает работу раньше чем module, mode и velocity инициализируются
 
         LocalPlayer.setOnGround(true);
 
